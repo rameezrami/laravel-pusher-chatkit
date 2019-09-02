@@ -1,0 +1,14 @@
+{
+    "name": "thinkstermind/laravel-pusher-chatkit",
+    "description": "Laravel Pusher ChatKit Package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rameez rami",
+            "email": "rameespu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

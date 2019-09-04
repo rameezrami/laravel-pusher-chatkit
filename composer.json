@@ -16,10 +16,7 @@
     "autoload": {
         "psr-4": {
             "ThinksterMind\\ChatKit\\": "src/"
-        },
-        "files": [
-            "src/app/Helpers/helpers.php"
-        ]
+        }
     },
     "extra": {
         "laravel": {

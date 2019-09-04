@@ -10,5 +10,25 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "pusher/pusher-chatkit-server": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "ThinksterMind\\ChatKit\\": "src/"
+        },
+        "files": [
+            "src/app/Helpers/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ThinksterMind\\ChatKit\\ChatKitServiceProvider"
+            ],
+            "aliases": {
+                "ChatKit": "ThinksterMind\\ChatKit\\Facades\\ChatKit"
+            }
+        }
+    }
 }

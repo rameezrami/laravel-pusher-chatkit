@@ -14,7 +14,7 @@ class ChatKit
         if ($config):
             $this->config = $config;
         else:
-            $this->config = config('services.chatkit');
+            $this->config = config('chatkit.config');
         endif;
 
         $this->instance = $this->getInstance();

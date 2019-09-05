@@ -15,6 +15,9 @@ class ChatKitServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__.'/config/chatkit.php' => config_path('chatkit.php'),
+        ]);
     }
 
     /**
@@ -27,6 +30,8 @@ class ChatKitServiceProvider extends ServiceProvider
         App::bind('chatkit', function () {
             return new ChatKit();
         });
+
+        $this->mergeConfigFrom(__DIR__.'/config/chatkit.php','chatkit');
     }
 
     /**
